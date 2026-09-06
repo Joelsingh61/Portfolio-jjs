@@ -1,2 +1,22 @@
-# Empty initially as user requested no fabricated work experiences.
-# Adding entries here will automatically render them in the Experience section on the site.
+[[experience]]
+id = "prime-road"
+company = "Prime Road Pvt. Limited"
+role = "Technical Operations Intern"
+location = "Avadi, Chennai, India"
+start_date = "2025-12"
+end_date = "2026-01"
+current = false
+description = "Completed a Technical Operations internship at Prime Road Pvt. Limited, a thermoplastic paint manufacturing company, gaining practical exposure to industrial manufacturing processes, technical operations, and production workflows."
+responsibilities = [
+  "Gained hands-on exposure to thermoplastic paint manufacturing and industrial production processes.",
+  "Observed and supported technical operations across manufacturing and production workflows.",
+  "Developed an understanding of material handling, process coordination, and industrial safety practices.",
+  "Gained practical exposure to quality-focused manufacturing operations and process monitoring."
+]
+technologies = [
+  "Thermoplastic Paint Manufacturing",
+  "Industrial Manufacturing",
+  "Technical Operations",
+  "Quality Control",
+  "Industrial Safety"
+]
