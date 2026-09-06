@@ -4,39 +4,58 @@ items = [
   "C++",
   "Python",
   "Java",
-  "SQL"
+  "SQL",
+  "Bash / Shell Scripting"
 ]
 
 [[skills]]
 category = "Robotics"
 items = [
-  "ROS / ROS2",
-  "Autonomous Mobile Robots",
+  "ROS",
+  "ROS2",
+  "Mobile Robotics",
+  "Autonomous Navigation",
   "Obstacle Avoidance",
   "Path Planning",
-  "Localization & Mapping",
-  "Sensor Integration",
-  "Motor Control"
+  "Robot Simulation",
+  "Gazebo",
+  "Sensor Integration"
 ]
 
 [[skills]]
 category = "Computer Vision / AI"
 items = [
   "OpenCV",
-  "YOLO",
+  "CNN",
+  "Deep Learning",
   "Machine Learning",
   "Computer Vision",
   "Image Processing",
-  "Signal Processing"
+  "Transfer Learning",
+  "Xception",
+  "VGG16",
+  "VGG19",
+  "Inception"
+]
+
+[[skills]]
+category = "Embedded Systems"
+items = [
+  "Embedded Systems",
+  "Wearable Technology",
+  "Smart Glove Development",
+  "Gesture Recognition",
+  "Sensor Data Processing",
+  "Human-Machine Interaction"
 ]
 
 [[skills]]
 category = "Databases"
 items = [
+  "Oracle",
   "MySQL",
   "PostgreSQL",
-  "MongoDB",
-  "Oracle"
+  "MongoDB"
 ]
 
 [[skills]]
@@ -44,6 +63,8 @@ category = "Tools & Systems"
 items = [
   "Linux",
   "Git",
-  "Docker",
-  "Embedded C++"
+  "GitHub",
+  "Gazebo",
+  "Bash",
+  "MATLAB"
 ]
