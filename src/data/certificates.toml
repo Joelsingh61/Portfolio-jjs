@@ -8,3 +8,20 @@ credential_id = ""
 file = "/certificates/oracle-ai-database.pdf"
 verification = ""
 skills = ["Oracle", "AI", "Databases", "SQL"]
+
+
+[[certificates]]
+id = "matlab-onramp"
+name = "MATLAB Onramp"
+issuer = "MathWorks"
+date = "2026"
+category = "Programming / Engineering"
+credential_id = ""
+file = "/certificates/matlab-onramp.pdf"
+verification = ""
+skills = [
+  "MATLAB",
+  "Programming",
+  "Data Analysis",
+  "Engineering Computing"
+]
