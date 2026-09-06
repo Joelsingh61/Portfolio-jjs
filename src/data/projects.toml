@@ -36,7 +36,7 @@ value = "~95%"
 description = "Classification accuracy achieved by the best-performing model"
 
 images = [
-  "/projects/mri-01.webp"
+  "/projects/mri.webp"
 ]
 videos = []
 github = ""
