@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://joelsingh.dev/sitemap.xml
+Sitemap: https://www.joeljabasingh.tech/sitemap.xml
