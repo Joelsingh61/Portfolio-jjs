@@ -1,0 +1,46 @@
+[profile]
+name = "Joel Jaba Singh J"
+title = "Final Year Student — Robotics and Automation"
+university = "Lovely Professional University"
+location = "India"
+field = "Robotics & Automation Engineering"
+status = "Open to Opportunities"
+tagline = "Building intelligent systems for the physical world."
+description = """
+Final Year Robotics and Automation student at Lovely Professional University, focused on robotics, autonomous systems, computer vision, AI, and intelligent machines. Passionate about designing robust hardware-software integrations and autonomous mobile platform architectures for real-world physical operations.
+"""
+
+robotics_interests = [
+  "Autonomous Mobile Robots",
+  "Path Planning & Localization",
+  "Sensors & Sensor Fusion",
+  "Unmanned Aerial Vehicles (UAVs)"
+]
+
+ai_interests = [
+  "Computer Vision",
+  "Object Detection & Segmentation",
+  "Intelligent Decision Systems",
+  "Machine Learning"
+]
+
+technical_interests = [
+  "Embedded Systems & Firmware",
+  "Motor Controllers & Telemetry",
+  "Signal Processing",
+  "Human-Machine Interaction"
+]
+
+career_interests = [
+  "Robotics Software Engineering",
+  "Autonomous Systems Engineering",
+  "Computer Vision & AI Engineering"
+]
+
+current_focus = "Autonomous mobile robot navigation systems, computer vision algorithms, and embedded intelligent control."
+
+[profile.social]
+github = ""
+linkedin = ""
+email = ""
+location = "India"

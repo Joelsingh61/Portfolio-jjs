@@ -1,0 +1,120 @@
+[[projects]]
+id = "amr"
+title = "Autonomous Mobile Robot"
+category = "Robotics / Autonomous Navigation"
+year = 2026
+featured = true
+short_description = "An Autonomous Mobile Robot designed for intelligent navigation and movement in real-world environments."
+description = "A comprehensive mobile robotic platform engineered for autonomous navigation, dynamic obstacle avoidance, precise localization, and path planning in real-world environments."
+problem = "Navigating unstructured environments requires real-time sensor data integration, continuous pose estimation, and reactive collision avoidance without human intervention."
+solution = "Integrated multi-sensor perception with global path planning and local obstacle avoidance algorithms to execute safe autonomous navigation along designated waypoints."
+contribution = "Engineered core sensor pipeline integrations, path planning software modules, obstacle detection interfaces, and motor telemetry routines."
+technologies = ["ROS / ROS2", "Python", "C++", "OpenCV", "Linux"]
+hardware = ["Differential Drive Base", "LiDAR Sensor", "Motor Controllers", "SBC Platform", "IMU"]
+software = ["ROS / ROS2 Navigation Stack", "Path Planning Pipeline", "Motor Control Firmware", "Telemetry Dashboard"]
+features = [
+  "Autonomous waypoint-based target navigation",
+  "Real-time dynamic obstacle detection and avoidance",
+  "Sensor fusion combining wheel odometry and IMU signals",
+  "Real-time motion visual monitoring interface"
+]
+achievements = [
+  "Architected modular ROS nodes ensuring rapid sensor feedback loop execution."
+]
+results = [
+  "Add measured result"
+]
+
+[[projects.metrics]]
+label = "Navigation Mode"
+value = "Autonomous"
+description = "Waypoint trajectory tracking"
+
+[[projects.metrics]]
+label = "Perception"
+value = "LiDAR / IMU"
+description = "Real-time environment mapping"
+
+images = [
+  "/projects/amr-01.webp",
+  "/projects/amr-02.webp"
+]
+videos = []
+github = ""
+demo = ""
+documentation = ""
+patent = ""
+
+
+[[projects]]
+id = "mri-computer-vision"
+title = "MRI Medical Imaging & Vision Pipeline"
+category = "Medical Imaging / Computer Vision / AI"
+year = 2026
+featured = true
+short_description = "Computer vision and deep learning application for MRI scan preprocessing and structural feature analysis."
+description = "A computer vision software solution designed for MRI medical image preprocessing, contrast normalization, noise reduction, and region segmentation."
+problem = "Raw magnetic resonance imaging (MRI) datasets require automated preprocessing and structural enhancement to support downstream computer vision feature analysis."
+solution = "Developed an image processing pipeline utilizing adaptive thresholding, edge filtering, and deep learning feature extraction models."
+contribution = "Constructed input data pipelines, computer vision pre-filtering algorithms, region-of-interest segmentation routines, and diagnostic visualizers."
+technologies = ["Python", "OpenCV", "Machine Learning", "PyTorch / TensorFlow", "Computer Vision"]
+hardware = ["GPU Workstation"]
+software = ["OpenCV Vision Pipeline", "Deep Learning Segmentation Framework"]
+features = [
+  "Automated MRI scan preprocessing and intensity normalization",
+  "Spatial noise reduction and edge preservation filters",
+  "Region of interest (ROI) extraction and boundary detection",
+  "Color-mapped visualization outputs for anatomical analysis"
+]
+achievements = [
+  "Established an automated computer vision processing workflow from raw input scans to detailed visual outputs."
+]
+results = [
+  "Add measured result"
+]
+
+images = [
+  "/projects/mri-01.webp"
+]
+videos = []
+github = ""
+demo = ""
+documentation = ""
+patent = ""
+
+
+[[projects]]
+id = "smart-glove"
+title = "Smart Glove Human-Machine Interface"
+category = "Wearable Robotics / Embedded Systems / Human-Machine Interaction"
+year = 2026
+featured = true
+short_description = "A smart wearable glove system incorporating sensors for gesture detection and real-time robotic hardware control."
+description = "An embedded wearable glove incorporating sensory feedback and signal processing to translate physical hand gestures into control commands for external robotic actuators."
+problem = "Conventional joystick controllers lack intuitive spatial control when operating multi-axis robotic manipulators or remote teleoperation platforms."
+solution = "Engineered a low-latency gesture acquisition glove using flex sensors and IMU units to capture micro-gestures and stream motion signals wirelessly."
+contribution = "Handled sensor signal conditioning, microcontroller firmware, spatial orientation mapping, and real-time telemetry output."
+technologies = ["Embedded C++", "Python", "Microcontrollers", "Signal Processing", "Sensor Fusion"]
+hardware = ["Flex Sensors", "IMU 6-DOF Sensor", "Microcontroller Board", "Wireless Transceiver Module", "Custom Wearable Glove"]
+software = ["Embedded Firmware", "Signal Filtering Engine", "Gesture Mapping Protocol"]
+features = [
+  "Multi-finger flex measurement with automatic dynamic range calibration",
+  "Real-time 3D orientation tracking via IMU sensor fusion",
+  "Low-latency wireless command streaming to robotic receivers",
+  "Visual and haptic status indicators for direct feedback"
+]
+achievements = [
+  "Successfully demonstrated direct spatial gesture-to-command translation with intuitive control mapping."
+]
+results = [
+  "Add measured result"
+]
+
+images = [
+  "/projects/glove-01.webp"
+]
+videos = []
+github = ""
+demo = ""
+documentation = ""
+patent = ""

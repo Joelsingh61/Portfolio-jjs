@@ -1,0 +1,16 @@
+[[education]]
+institution = "Lovely Professional University"
+degree = "Bachelor of Technology — Robotics and Automation"
+status = "Final Year Student"
+start_year = "2022"
+expected_graduation = "2026"
+cgpa = ""
+coursework = [
+  "Robotics & Kinematics",
+  "Autonomous Systems & Navigation",
+  "Computer Vision & Image Processing",
+  "Embedded Systems & Microcontrollers",
+  "Control Engineering & Automation",
+  "Artificial Intelligence & Machine Learning"
+]
+achievements = []

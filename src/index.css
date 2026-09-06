@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light Mode: Warm Handcrafted Editorial Paper / Parchment Aesthetic */
+    --bg-main: #f5f2eb;
+    --bg-gradient: radial-gradient(circle at 50% 0%, #f7f4ed 0%, #f2eee5 100%);
+    --text-primary: #1f1c19;
+    --text-secondary: #4a453f;
+    --text-muted: #7c746b;
+    --surface-card: #fcfbfa;
+    --surface-card-hover: #f1ede4;
+    --surface-border: #e3ded5;
+    --surface-muted: #ede8de;
+    --accent-main: #059669;
+    --accent-glow: rgba(5, 150, 105, 0.12);
+    --accent-hover: #047857;
+    --navbar-bg: rgba(245, 242, 235, 0.88);
+    --navbar-border: rgba(227, 222, 213, 0.8);
+    --card-shadow: 0 4px 20px -2px rgba(31, 28, 25, 0.06), 0 2px 6px -1px rgba(31, 28, 25, 0.03);
+    --card-shadow-hover: 0 12px 30px -4px rgba(5, 150, 105, 0.14), 0 4px 12px -2px rgba(31, 28, 25, 0.05);
+    --grid-color: rgba(5, 150, 105, 0.09);
+    --selection-bg: #d1fae5;
+    --selection-text: #065f46;
+  }
+
+  .dark {
+    /* Dark Mode: Pitch Black & Emerald Green Cyberpunk/Matrix Theme */
+    --bg-main: #050706;
+    --bg-gradient: radial-gradient(circle at 50% 0%, #0a110d 0%, #050706 100%);
+    --text-primary: #f0fdf4;
+    --text-secondary: #a7f3d0;
+    --text-muted: #6ee7b7;
+    --surface-card: #0a0f0d;
+    --surface-card-hover: #101915;
+    --surface-border: #143826;
+    --surface-muted: #0d1612;
+    --accent-main: #10b981;
+    --accent-glow: rgba(16, 185, 129, 0.22);
+    --accent-hover: #34d399;
+    --navbar-bg: rgba(5, 7, 6, 0.9);
+    --navbar-border: rgba(20, 56, 38, 0.8);
+    --card-shadow: 0 4px 25px -2px rgba(16, 185, 129, 0.15), 0 0 15px rgba(0, 0, 0, 0.8);
+    --card-shadow-hover: 0 10px 35px -2px rgba(16, 185, 129, 0.3), 0 0 25px rgba(16, 185, 129, 0.2);
+    --grid-color: rgba(16, 185, 129, 0.12);
+    --selection-bg: #10b981;
+    --selection-text: #050706;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--bg-main);
+    background-image: var(--bg-gradient);
+    background-attachment: fixed;
+    color: var(--text-primary);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+}
+
+/* Custom Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-main);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--surface-border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-main);
+}

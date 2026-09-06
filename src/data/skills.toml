@@ -1,0 +1,49 @@
+[[skills]]
+category = "Programming"
+items = [
+  "C++",
+  "Python",
+  "Java",
+  "SQL"
+]
+
+[[skills]]
+category = "Robotics"
+items = [
+  "ROS / ROS2",
+  "Autonomous Mobile Robots",
+  "Obstacle Avoidance",
+  "Path Planning",
+  "Localization & Mapping",
+  "Sensor Integration",
+  "Motor Control"
+]
+
+[[skills]]
+category = "Computer Vision / AI"
+items = [
+  "OpenCV",
+  "YOLO",
+  "Machine Learning",
+  "Computer Vision",
+  "Image Processing",
+  "Signal Processing"
+]
+
+[[skills]]
+category = "Databases"
+items = [
+  "MySQL",
+  "PostgreSQL",
+  "MongoDB",
+  "Oracle"
+]
+
+[[skills]]
+category = "Tools & Systems"
+items = [
+  "Linux",
+  "Git",
+  "Docker",
+  "Embedded C++"
+]

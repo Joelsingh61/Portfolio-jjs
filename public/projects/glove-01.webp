@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" fill="none">
+    <rect width="1200" height="800" fill="#0c0d12"/>
+    <rect width="1200" height="800" fill="url(#grid)" opacity="0.15"/>
+    <defs>
+      <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-width="1"/>
+      </pattern>
+      <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.25"/>
+        <stop offset="100%" stop-color="#0c0d12" stop-opacity="0"/>
+      </linearGradient>
+    </defs>
+    <rect width="1200" height="800" fill="url(#glow)"/>
+    <circle cx="600" cy="360" r="160" stroke="#f59e0b" stroke-width="2" opacity="0.4" stroke-dasharray="8 8"/>
+    <circle cx="600" cy="360" r="80" stroke="#f59e0b" stroke-width="1.5" opacity="0.6"/>
+    <text x="600" y="370" font-family="system-ui, sans-serif" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="4">SMART GLOVE HMI</text>
+    <text x="600" y="420" font-family="system-ui, sans-serif" font-size="16" font-weight="500" fill="#a1a1aa" text-anchor="middle">Wearable Flex Sensor & IMU Teleoperation</text>
+    <text x="600" y="740" font-family="monospace" font-size="12" fill="#52525b" text-anchor="middle">SYSTEM ARCHITECTURE // ROBOTICS &amp; AI LAB</text>
+  </svg>

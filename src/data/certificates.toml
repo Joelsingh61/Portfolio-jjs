@@ -1,0 +1,10 @@
+[[certificates]]
+id = "oracle-ai-database"
+name = "Oracle AI Database Foundations Associate"
+issuer = "Oracle"
+date = "2026"
+category = "AI / Database"
+credential_id = ""
+file = "/certificates/oracle-ai-database.pdf"
+verification = ""
+skills = ["Oracle", "AI", "Databases", "SQL"]
