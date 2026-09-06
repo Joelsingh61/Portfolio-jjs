@@ -1,77 +1,39 @@
 [[projects]]
-id = "amr"
-title = "Autonomous Mobile Robot"
-category = "Robotics / Autonomous Navigation"
+id = "mri-brain-tumor"
+title = "MRI Brain Tumor Detection Using Pre-trained CNN Models"
+category = "Medical Imaging / Computer Vision / Deep Learning"
 year = 2026
 featured = true
-short_description = "An Autonomous Mobile Robot designed for intelligent navigation and movement in real-world environments."
-description = "A comprehensive mobile robotic platform engineered for autonomous navigation, dynamic obstacle avoidance, precise localization, and path planning in real-world environments."
-problem = "Navigating unstructured environments requires real-time sensor data integration, continuous pose estimation, and reactive collision avoidance without human intervention."
-solution = "Integrated multi-sensor perception with global path planning and local obstacle avoidance algorithms to execute safe autonomous navigation along designated waypoints."
-contribution = "Engineered core sensor pipeline integrations, path planning software modules, obstacle detection interfaces, and motor telemetry routines."
-technologies = ["ROS / ROS2", "Python", "C++", "OpenCV", "Linux"]
-hardware = ["Differential Drive Base", "LiDAR Sensor", "Motor Controllers", "SBC Platform", "IMU"]
-software = ["ROS / ROS2 Navigation Stack", "Path Planning Pipeline", "Motor Control Firmware", "Telemetry Dashboard"]
-features = [
-  "Autonomous waypoint-based target navigation",
-  "Real-time dynamic obstacle detection and avoidance",
-  "Sensor fusion combining wheel odometry and IMU signals",
-  "Real-time motion visual monitoring interface"
-]
-achievements = [
-  "Architected modular ROS nodes ensuring rapid sensor feedback loop execution."
-]
-results = [
-  "Add measured result"
-]
-
-[[projects.metrics]]
-label = "Navigation Mode"
-value = "Autonomous"
-description = "Waypoint trajectory tracking"
-
-[[projects.metrics]]
-label = "Perception"
-value = "LiDAR / IMU"
-description = "Real-time environment mapping"
-
-images = [
-  "/projects/amr-01.webp",
-  "/projects/amr-02.webp"
-]
-videos = []
-github = ""
-demo = ""
-documentation = ""
-patent = ""
-
-
-[[projects]]
-id = "mri-computer-vision"
-title = "MRI Medical Imaging & Vision Pipeline"
-category = "Medical Imaging / Computer Vision / AI"
-year = 2026
-featured = true
-short_description = "Computer vision and deep learning application for MRI scan preprocessing and structural feature analysis."
-description = "A computer vision software solution designed for MRI medical image preprocessing, contrast normalization, noise reduction, and region segmentation."
-problem = "Raw magnetic resonance imaging (MRI) datasets require automated preprocessing and structural enhancement to support downstream computer vision feature analysis."
-solution = "Developed an image processing pipeline utilizing adaptive thresholding, edge filtering, and deep learning feature extraction models."
-contribution = "Constructed input data pipelines, computer vision pre-filtering algorithms, region-of-interest segmentation routines, and diagnostic visualizers."
-technologies = ["Python", "OpenCV", "Machine Learning", "PyTorch / TensorFlow", "Computer Vision"]
+short_description = "Deep learning-based system for detecting brain tumors from MRI images using pre-trained convolutional neural network models."
+description = "A deep learning-based medical imaging project focused on detecting brain tumors from MRI scans using pre-trained CNN models and transfer learning techniques."
+problem = "Manual analysis of MRI scans can be time-consuming and requires expert interpretation, creating a need for computer-aided systems that can assist in identifying potential brain tumors."
+solution = "Developed a deep learning pipeline that processes MRI images and evaluates multiple pre-trained CNN models for automated brain tumor detection and classification."
+contribution = "Implemented the MRI image preprocessing pipeline, trained and evaluated pre-trained CNN models, compared model performance, and developed the classification workflow."
+technologies = ["Python", "Deep Learning", "CNN", "Transfer Learning", "Computer Vision"]
 hardware = ["GPU Workstation"]
-software = ["OpenCV Vision Pipeline", "Deep Learning Segmentation Framework"]
+software = ["Pre-trained CNN Models", "Image Preprocessing Pipeline", "Model Evaluation Pipeline"]
 features = [
-  "Automated MRI scan preprocessing and intensity normalization",
-  "Spatial noise reduction and edge preservation filters",
-  "Region of interest (ROI) extraction and boundary detection",
-  "Color-mapped visualization outputs for anatomical analysis"
+  "MRI image preprocessing and dataset preparation",
+  "Deep learning-based brain tumor classification",
+  "Evaluation and comparison of multiple pre-trained CNN architectures",
+  "Automated prediction from MRI image input"
 ]
 achievements = [
-  "Established an automated computer vision processing workflow from raw input scans to detailed visual outputs."
+  "Evaluated multiple pre-trained CNN architectures and identified Xception as the best-performing model."
 ]
 results = [
-  "Add measured result"
+  "Best-performing Xception model achieved approximately 95% accuracy."
 ]
+
+[[projects.metrics]]
+label = "Best Model"
+value = "Xception"
+description = "Best-performing pre-trained CNN model"
+
+[[projects.metrics]]
+label = "Accuracy"
+value = "~95%"
+description = "Classification accuracy achieved by the best-performing model"
 
 images = [
   "/projects/mri-01.webp"
@@ -85,33 +47,91 @@ patent = ""
 
 [[projects]]
 id = "smart-glove"
-title = "Smart Glove Human-Machine Interface"
-category = "Wearable Robotics / Embedded Systems / Human-Machine Interaction"
+title = "Smart Glove for ASL to English Translation"
+category = "Wearable Technology / Embedded Systems / Human-Machine Interaction"
 year = 2026
 featured = true
-short_description = "A smart wearable glove system incorporating sensors for gesture detection and real-time robotic hardware control."
-description = "An embedded wearable glove incorporating sensory feedback and signal processing to translate physical hand gestures into control commands for external robotic actuators."
-problem = "Conventional joystick controllers lack intuitive spatial control when operating multi-axis robotic manipulators or remote teleoperation platforms."
-solution = "Engineered a low-latency gesture acquisition glove using flex sensors and IMU units to capture micro-gestures and stream motion signals wirelessly."
-contribution = "Handled sensor signal conditioning, microcontroller firmware, spatial orientation mapping, and real-time telemetry output."
-technologies = ["Embedded C++", "Python", "Microcontrollers", "Signal Processing", "Sensor Fusion"]
-hardware = ["Flex Sensors", "IMU 6-DOF Sensor", "Microcontroller Board", "Wireless Transceiver Module", "Custom Wearable Glove"]
-software = ["Embedded Firmware", "Signal Filtering Engine", "Gesture Mapping Protocol"]
+short_description = "A wearable smart glove designed to recognize American Sign Language gestures and translate them into English."
+description = "A wearable smart glove project designed to capture hand gestures and translate recognized American Sign Language (ASL) signs into corresponding English output."
+problem = "Communication between sign-language users and people unfamiliar with sign language can be challenging, creating a need for an accessible system that can convert hand gestures into understandable English output."
+solution = "Developed a wearable glove-based system that captures hand gestures using integrated sensing components and processes the gesture information to identify ASL signs and generate corresponding English output."
+contribution = "Worked on the wearable glove system, gesture data acquisition, signal processing, gesture recognition, and translation of recognized signs into English."
+technologies = ["Embedded Systems", "Sensor Processing", "Gesture Recognition", "Wearable Technology", "Human-Machine Interaction"]
+hardware = ["Wearable Glove", "Gesture Sensors", "Microcontroller"]
+software = ["Gesture Recognition System", "Signal Processing Pipeline", "English Translation Output"]
 features = [
-  "Multi-finger flex measurement with automatic dynamic range calibration",
-  "Real-time 3D orientation tracking via IMU sensor fusion",
-  "Low-latency wireless command streaming to robotic receivers",
-  "Visual and haptic status indicators for direct feedback"
+  "Wearable hand-gesture sensing",
+  "Recognition of American Sign Language gestures",
+  "Conversion of recognized gestures into English",
+  "Real-time gesture-based human-machine interaction"
 ]
 achievements = [
-  "Successfully demonstrated direct spatial gesture-to-command translation with intuitive control mapping."
+  "Developed a wearable interface for converting hand gestures into English-language output."
 ]
 results = [
   "Add measured result"
 ]
 
+[[projects.metrics]]
+label = "Interface"
+value = "Wearable"
+description = "Glove-based gesture interaction"
+
+[[projects.metrics]]
+label = "Translation"
+value = "ASL → English"
+description = "Gesture-to-language translation"
+
 images = [
   "/projects/glove-01.webp"
+]
+videos = []
+github = ""
+demo = ""
+documentation = ""
+patent = ""
+
+
+[[projects]]
+id = "factory-inspection-robot"
+title = "ROS2-Based Factory Inspection Robot for AI-Powered Hazard Detection"
+category = "Robotics / Industrial Inspection / AI / Computer Vision"
+year = 2026
+featured = true
+short_description = "A ROS2-based factory inspection robot using Gazebo simulation, OpenCV, and AI/ML for automated hazard detection."
+description = "An ongoing robotics project focused on developing a ROS2-based factory inspection robot capable of monitoring industrial environments and identifying potential hazards using computer vision and a trained AI/ML model."
+problem = "Industrial environments can contain hazardous conditions that require continuous monitoring, while manual inspection can expose workers to unsafe areas and may not provide continuous real-time monitoring."
+solution = "Developing a simulated mobile inspection robot in Gazebo that combines ROS2-based robotic systems, OpenCV-based image processing, and an AI/ML hazard detection model for automated factory environment monitoring."
+contribution = "Working on the ROS2 robotic system, Gazebo simulation environment, computer vision pipeline, and integration of the trained AI/ML model for visual hazard detection."
+technologies = ["ROS2", "Python", "Gazebo", "OpenCV", "AI/ML", "Computer Vision"]
+hardware = ["Mobile Robot Platform"]
+software = ["ROS2", "Gazebo", "OpenCV Vision Pipeline", "AI/ML Hazard Detection Model"]
+features = [
+  "Simulated factory inspection robot",
+  "ROS2-based robot control and communication",
+  "Gazebo-based industrial environment simulation",
+  "Computer vision-based environmental monitoring",
+  "AI/ML-based hazard identification"
+]
+achievements = [
+  "Developing an integrated ROS2, computer vision, and AI/ML pipeline for automated industrial hazard monitoring."
+]
+results = [
+  "Project currently under development."
+]
+
+[[projects.metrics]]
+label = "Platform"
+value = "ROS2 + Gazebo"
+description = "Robotic simulation and development environment"
+
+[[projects.metrics]]
+label = "Vision"
+value = "OpenCV + AI/ML"
+description = "Computer vision-based hazard detection"
+
+images = [
+  "/projects/factory-robot-01.webp"
 ]
 videos = []
 github = ""
