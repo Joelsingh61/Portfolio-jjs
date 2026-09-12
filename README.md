@@ -1,6 +1,6 @@
 # Joel Jaba Singh J — Personal Engineering Portfolio
 
-A modern, high-precision dark-themed personal portfolio website for **Joel Jaba Singh J** (Final Year Student in Robotics & Automation at Lovely Professional University), focused on Autonomous Mobile Robots, Computer Vision, AI, Embedded Systems, and Intelligent Machines.
+A modern, high-precision dark-themed personal portfolio website for **Joel Jaba Singh J** (Final Year Student in Robotics & Automation at Lovely Professional University), focused on Autonomous Mobile Robots, Computer Vision, AI, Embedded Systems, and Intelligent Machines
 
 Inspired by Apple, Linear, and Vercel design aesthetics, this application is **100% data-driven** using **TOML files** as the single source of truth.
 
