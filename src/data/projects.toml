@@ -1,876 +1,345 @@
-# ============================================================
-# MRI-BASED BRAIN TUMOR DETECTION
-# ============================================================
-
 [[projects]]
 id = "mri-brain-tumor-detection"
 
 title = "MRI-Based Brain Tumor Detection Using Pretrained CNN Models"
-
-short_description = "A deep-learning based multi-class MRI classification system that uses pretrained CNN architectures and transfer learning to identify brain tumor categories."
-
-description = """
-An experimental deep-learning system for automated classification of brain MRI
-images into four categories: No Tumor, Glioma, Meningioma, and Pituitary Tumor.
-
-The project investigates the effectiveness of pretrained convolutional neural
-network architectures using transfer learning, image augmentation, and
-GPU-accelerated training for medical image classification.
-"""
-
-project_type = "Research Project"
-domain = "Deep Learning / Medical Image Analysis / Computer Vision"
-category = "Artificial Intelligence"
-status = "Completed"
+category = "Deep Learning / Medical Image Analysis / Computer Vision"
+year = 2026
 featured = true
 
+short_description = "Multi-class brain MRI classification system using pretrained CNN architectures and transfer learning to identify glioma, meningioma, pituitary tumor, and no-tumor cases."
+
+description = "Developed an end-to-end deep learning pipeline for classifying brain MRI images into four categories using pretrained Xception, InceptionResNetV2, VGG16, and VGG19 convolutional neural network architectures. The system combines MRI image preprocessing, normalization, data augmentation, transfer learning, GPU-accelerated training, and multi-metric evaluation to investigate the effectiveness of pretrained CNN models for brain tumor classification."
+
 # ------------------------------------------------------------
-# TIMELINE
+# PROJECT TIMELINE
 # ------------------------------------------------------------
 
 start_date = "2026-01"
 end_date = "2026-06"
-timeline = "2026"
-duration = "2026"
-role = "Research & Development — Deep Learning, Data Preprocessing & Model Evaluation"
+duration = "6 Months"
+status = "Completed"
+role = "Deep Learning Research & Development"
 
 # ------------------------------------------------------------
-# HERO METADATA
+# PROBLEM
 # ------------------------------------------------------------
 
-hero_tagline = "Deep Learning for Multi-Class Brain MRI Classification"
-
-hero_description = """
-Exploring pretrained CNN architectures and transfer learning for automated
-classification of brain MRI images across four tumor-related categories.
-"""
-
-hero_metrics = [
-    "6,368 MRI Images",
-    "4 Classification Classes",
-    "98.17% Test Accuracy",
-    "98.25% F1-Score"
-]
-
-hero_technologies = [
-    "Python",
-    "TensorFlow",
-    "Keras",
-    "CNN",
-    "Transfer Learning"
-]
-
-# ------------------------------------------------------------
-# PROBLEM STATEMENT
-# ------------------------------------------------------------
-
-[projects.problem]
-title = "The Problem"
-
-description = """
-Brain tumor identification from MRI scans requires detailed analysis of
-medical images and can involve significant time and specialist expertise.
-
-The project investigates the use of deep-learning based computer vision
-methods to automatically classify brain MRI images into multiple categories.
-
-The core challenge is to develop a model capable of learning discriminative
-visual features from MRI images and accurately distinguishing between
-different tumor categories while maintaining good generalization on unseen
-test images.
-"""
-
-key_points = [
-    "Manual MRI image analysis can be time-intensive.",
-    "Different tumor types can exhibit visually similar characteristics.",
-    "Deep CNNs require large amounts of representative training data.",
-    "Medical-image datasets can contain significant visual variation.",
-    "A reliable evaluation requires more than training accuracy alone."
-]
+problem = "Brain MRI analysis requires careful examination of complex visual patterns, while manual classification can be time-consuming and dependent on specialist expertise. The project addresses the problem of automatically classifying MRI brain images into multiple tumor categories using deep learning."
 
 # ------------------------------------------------------------
 # OBJECTIVE
 # ------------------------------------------------------------
 
-[projects.objective]
-title = "Project Objective"
-
-description = """
-Develop and evaluate a deep-learning pipeline capable of classifying brain
-MRI images into four categories using pretrained convolutional neural
-network architectures and transfer learning.
-"""
-
-objectives = [
-    "Prepare and preprocess MRI images for deep-learning models.",
-    "Apply image augmentation to improve training-data variability.",
-    "Implement transfer learning using pretrained CNN architectures.",
-    "Compare multiple CNN architectures for the classification task.",
-    "Evaluate models using accuracy, precision, recall and F1-score.",
-    "Identify the strongest-performing architecture within the experiment.",
-    "Build a reproducible research-oriented MRI classification pipeline."
-]
+objective = "To develop and evaluate a transfer-learning based deep learning system capable of automatically classifying brain MRI images into No Tumor, Glioma, Meningioma, and Pituitary Tumor categories, while comparing the performance of multiple pretrained CNN architectures."
 
 # ------------------------------------------------------------
-# WHAT I BUILT
+# SOLUTION
 # ------------------------------------------------------------
 
-[projects.solution]
-title = "What I Built"
-
-description = """
-I developed an end-to-end MRI image classification pipeline using pretrained
-CNN architectures. The system takes an MRI image as input, applies the
-required preprocessing and transformation pipeline, extracts visual
-features using a pretrained CNN, and produces a prediction across four
-brain MRI categories.
-"""
-
-workflow = [
-    "MRI Dataset",
-    "Data Preprocessing",
-    "Image Resizing",
-    "Pixel Normalization",
-    "Data Augmentation",
-    "Transfer Learning",
-    "CNN Feature Extraction",
-    "Classification",
-    "Model Validation",
-    "Test Evaluation"
-]
-
-classification_classes = [
-    "No Tumor",
-    "Glioma",
-    "Meningioma",
-    "Pituitary Tumor"
-]
+solution = "Built an end-to-end MRI image classification pipeline using pretrained Xception, InceptionResNetV2, VGG16, and VGG19 models. The pipeline performs image preprocessing, resizing, normalization, augmentation, feature extraction through pretrained CNN backbones, classification, and quantitative performance evaluation."
 
 # ------------------------------------------------------------
-# SYSTEM ARCHITECTURE
+# CONTRIBUTION
 # ------------------------------------------------------------
 
-[projects.architecture]
-title = "System Architecture"
-
-description = """
-The system follows a sequential machine-learning pipeline from MRI image
-preprocessing through CNN-based feature extraction and final multi-class
-classification.
-"""
-
-pipeline = [
-    "MRI Image Dataset",
-    "Preprocessing",
-    "Resizing & Normalization",
-    "Data Augmentation",
-    "Pretrained CNN",
-    "Feature Extraction",
-    "Classification Head",
-    "Four-Class Prediction",
-    "Performance Evaluation"
-]
-
-architecture_flow = """
-MRI Image
-    ↓
-Image Preprocessing
-    ↓
-Resize + Normalize
-    ↓
-Data Augmentation
-    ↓
-Pretrained CNN
-    ↓
-Feature Extraction
-    ↓
-Classification Head
-    ↓
-Four-Class Prediction
-    ↓
-Accuracy / Precision / Recall / F1 Evaluation
-"""
-
-architecture_components = [
-    "Input MRI Images",
-    "Image Preprocessing Pipeline",
-    "Data Augmentation Pipeline",
-    "Pretrained CNN Backbone",
-    "Feature Extraction Layer",
-    "Classification Layer",
-    "Prediction Output",
-    "Performance Evaluation Module"
-]
+contribution = "Designed the complete machine learning workflow including dataset preparation, image preprocessing, augmentation strategy, pretrained CNN implementation, transfer learning, model training, validation, testing, performance analysis, and comparison of multiple CNN architectures."
 
 # ------------------------------------------------------------
 # DATASET
 # ------------------------------------------------------------
 
-[projects.dataset]
-title = "Dataset & Data Preparation"
-
-name = "Brain MRI Dataset"
-source = "Kaggle / BraTS-related dataset"
-total_images = 6368
+dataset = "Brain MRI dataset obtained through Kaggle/BraTS-related data source."
+dataset_size = "6,368 MRI images"
 number_of_classes = 4
-
 classes = [
-    "No Tumor",
-    "Glioma",
-    "Meningioma",
-    "Pituitary Tumor"
+  "No Tumor",
+  "Glioma",
+  "Meningioma",
+  "Pituitary Tumor"
 ]
 
-description = """
-The dataset contains 6,368 MRI images organized into four classification
-categories. The dataset was prepared for supervised multi-class image
-classification.
-"""
-
-[projects.dataset.split]
-training = "70%"
-validation = "20%"
-testing = "10%"
-
-description = """
-The dataset was divided into training, validation and testing subsets.
-The training set was used for model learning, the validation set for
-monitoring model performance during training, and the test set for final
-evaluation on unseen images.
-"""
+data_split = "70% Training / 20% Validation / 10% Testing"
 
 # ------------------------------------------------------------
 # PREPROCESSING
 # ------------------------------------------------------------
 
-[projects.preprocessing]
-title = "Image Preprocessing"
-
-steps = [
-    "Image loading",
-    "Image resizing",
-    "Pixel normalization",
-    "Dataset organization",
-    "Label preparation",
-    "Data augmentation"
+preprocessing = [
+  "MRI image loading and organization",
+  "Image resizing according to CNN input requirements",
+  "Pixel normalization to the 0–1 range",
+  "Class label preparation",
+  "Training dataset augmentation"
 ]
 
-normalization = "Pixel values normalized to the 0–1 range"
-
-[projects.preprocessing.input_sizes]
-xception = "299 × 299 × 3"
-inceptionresnetv2 = "299 × 299 × 3"
-vgg16 = "224 × 224 × 3"
-vgg19 = "224 × 224 × 3"
-
-# ------------------------------------------------------------
-# DATA AUGMENTATION
-# ------------------------------------------------------------
-
-[projects.augmentation]
-title = "Data Augmentation"
-
-description = """
-Data augmentation was applied to introduce controlled variations in the
-training images and improve the ability of the models to generalize.
-"""
-
-techniques = [
-    "Rotation up to approximately 30°",
-    "Image flipping",
-    "Zoom augmentation",
-    "Brightness adjustment",
-    "Gaussian noise"
-]
-
-purpose = [
-    "Increase training-data variability",
-    "Reduce overfitting",
-    "Improve model robustness",
-    "Improve generalization to unseen images"
+augmentation = [
+  "Rotation up to approximately 30 degrees",
+  "Image flipping",
+  "Zoom augmentation",
+  "Brightness adjustment",
+  "Gaussian noise"
 ]
 
 # ------------------------------------------------------------
-# MODELS
+# CNN MODELS
 # ------------------------------------------------------------
 
-[projects.models]
-title = "Pretrained CNN Architectures"
-
-description = """
-Multiple pretrained CNN architectures were evaluated to compare their
-effectiveness for multi-class brain MRI classification.
-"""
-
-architectures = [
-    "Xception",
-    "InceptionResNetV2",
-    "VGG16",
-    "VGG19"
+models = [
+  "Xception",
+  "InceptionResNetV2",
+  "VGG16",
+  "VGG19"
 ]
 
-[projects.models.xception]
-name = "Xception"
-type = "Pretrained CNN"
-input_size = "299 × 299 × 3"
-role = "Primary high-performing architecture in the experiment"
+model_strategy = "Transfer learning using pretrained CNN architectures for feature extraction and multi-class classification."
 
-description = """
-Xception was evaluated as a transfer-learning backbone for extracting
-high-level visual features from MRI images before classification.
-"""
-
-[projects.models.inceptionresnetv2]
-name = "InceptionResNetV2"
-type = "Pretrained CNN"
-input_size = "299 × 299 × 3"
-role = "Transfer-learning comparison model"
-
-description = """
-InceptionResNetV2 combines Inception-style feature extraction with residual
-connections and was evaluated as an alternative deep CNN architecture.
-"""
-
-[projects.models.vgg16]
-name = "VGG16"
-type = "Pretrained CNN"
-input_size = "224 × 224 × 3"
-role = "Benchmark architecture"
-
-description = """
-VGG16 was evaluated as a conventional deep CNN architecture for comparison
-with the more complex pretrained models.
-"""
-
-[projects.models.vgg19]
-name = "VGG19"
-type = "Pretrained CNN"
-input_size = "224 × 224 × 3"
-role = "Benchmark architecture"
-
-description = """
-VGG19 was evaluated to investigate whether its deeper architecture provided
-advantages for MRI image classification.
-"""
-
-# ------------------------------------------------------------
-# TRAINING CONFIGURATION
-# ------------------------------------------------------------
-
-[projects.training]
-title = "Training Configuration"
-
-framework = "TensorFlow / Keras"
-language = "Python"
-optimizer = "Adamax"
-learning_rate = 0.001
-hardware = "NVIDIA T4 × 2"
-environment = "Kaggle GPU Environment"
-
-configuration = [
-    "Transfer learning",
-    "Pretrained CNN backbones",
-    "Adamax optimizer",
-    "Learning rate: 0.001",
-    "GPU-accelerated training"
-]
+xception_input_size = "299 × 299 × 3"
+inceptionresnetv2_input_size = "299 × 299 × 3"
+vgg16_input_size = "224 × 224 × 3"
+vgg19_input_size = "224 × 224 × 3"
 
 # ------------------------------------------------------------
 # TECHNICAL IMPLEMENTATION
 # ------------------------------------------------------------
 
-[projects.implementation]
-title = "Technical Implementation"
+technologies = [
+  "Python",
+  "TensorFlow",
+  "Keras",
+  "NumPy",
+  "Pandas",
+  "Matplotlib"
+]
 
 hardware = [
-    "NVIDIA T4 × 2 GPU environment"
+  "NVIDIA T4 GPU",
+  "NVIDIA T4 GPU"
 ]
 
 software = [
-    "Python",
-    "TensorFlow",
-    "Keras",
-    "NumPy",
-    "Pandas",
-    "Matplotlib"
+  "Python",
+  "TensorFlow",
+  "Keras",
+  "Kaggle GPU Environment"
 ]
 
 frameworks = [
-    "TensorFlow",
-    "Keras"
+  "TensorFlow",
+  "Keras"
 ]
 
 algorithms = [
-    "Convolutional Neural Networks",
-    "Transfer Learning",
-    "Image Augmentation",
-    "Multi-Class Classification"
+  "Convolutional Neural Networks",
+  "Transfer Learning",
+  "Image Augmentation",
+  "Multi-Class Classification"
 ]
 
-computer_vision = [
-    "MRI Image Processing",
-    "Image Resizing",
-    "Pixel Normalization",
-    "Image Augmentation"
+optimizer = "Adamax"
+learning_rate = "0.001"
+training_environment = "Kaggle"
+gpu_configuration = "NVIDIA T4 × 2"
+
+# ------------------------------------------------------------
+# SYSTEM ARCHITECTURE
+# ------------------------------------------------------------
+
+architecture = "MRI Dataset → Preprocessing → Resizing → Normalization → Data Augmentation → Pretrained CNN → Feature Extraction → Classification Head → Four-Class Prediction → Performance Evaluation"
+
+architecture_details = "The system accepts MRI images as input, preprocesses them according to the selected CNN architecture, applies augmentation during training, extracts high-level visual features through a pretrained CNN backbone, and generates a four-class prediction. The resulting models are evaluated using accuracy, precision, recall, and F1-score."
+
+# ------------------------------------------------------------
+# FEATURES
+# ------------------------------------------------------------
+
+features = [
+  "Four-class brain MRI classification",
+  "Transfer learning using pretrained CNN architectures",
+  "Xception-based high-performance classification",
+  "InceptionResNetV2 architecture evaluation",
+  "VGG16 and VGG19 benchmarking",
+  "MRI image normalization and preprocessing",
+  "Training data augmentation",
+  "GPU-accelerated deep learning",
+  "Multi-metric model evaluation",
+  "Comparative CNN architecture analysis"
 ]
 
 # ------------------------------------------------------------
-# KEY FEATURES
+# KEY ACHIEVEMENTS
 # ------------------------------------------------------------
 
-[projects.features]
-title = "Key Features"
-
-items = [
-    {
-        title = "Multi-Class Classification",
-        description = "Classifies MRI images into No Tumor, Glioma, Meningioma and Pituitary Tumor categories."
-    },
-    {
-        title = "Transfer Learning",
-        description = "Uses pretrained CNN architectures to leverage learned visual feature representations."
-    },
-    {
-        title = "Multi-Model Evaluation",
-        description = "Evaluates Xception, InceptionResNetV2, VGG16 and VGG19 architectures."
-    },
-    {
-        title = "Image Augmentation",
-        description = "Uses rotation, flipping, zoom, brightness modification and Gaussian noise to increase training variability."
-    },
-    {
-        title = "GPU-Accelerated Training",
-        description = "Uses an NVIDIA T4 × 2 GPU environment for computationally intensive model training."
-    },
-    {
-        title = "Quantitative Evaluation",
-        description = "Evaluates models using accuracy, precision, recall and F1-score."
-    }
+achievements = [
+  "Processed and evaluated a dataset containing 6,368 MRI images.",
+  "Implemented four-class brain MRI classification.",
+  "Evaluated Xception, InceptionResNetV2, VGG16, and VGG19 pretrained CNN architectures.",
+  "Implemented transfer learning for medical image classification.",
+  "Achieved 99.88% training accuracy using the Xception model.",
+  "Achieved 99.08% validation accuracy using the Xception model.",
+  "Achieved 98.17% test accuracy using the Xception model.",
+  "Achieved a reported precision of 98.25%.",
+  "Achieved a reported F1-score of 98.25%."
 ]
 
 # ------------------------------------------------------------
 # RESULTS
 # ------------------------------------------------------------
 
-[projects.results]
-title = "Key Analysis & Results"
-
-summary = """
-The Xception model produced the strongest reported results in the
-experiment, achieving high classification performance on the held-out
-test dataset.
-"""
-
-[projects.results.xception]
-model = "Xception"
-training_accuracy = "99.88%"
-validation_accuracy = "99.08%"
-test_accuracy = "98.17%"
-overall_accuracy = "≈98%"
-precision = "98.25%"
-f1_score = "98.25%"
-
-[projects.results.analysis]
-title = "Result Analysis"
-
-points = [
-    "The Xception model achieved 99.88% training accuracy.",
-    "Validation accuracy reached 99.08%.",
-    "Held-out test accuracy reached 98.17%.",
-    "Reported precision was 98.25%.",
-    "Reported F1-score was 98.25%.",
-    "The results indicate strong classification performance on the evaluated dataset.",
-    "Independent external validation would be required to assess broader generalization."
+results = [
+  "Xception achieved 99.88% training accuracy.",
+  "Xception achieved 99.08% validation accuracy.",
+  "Xception achieved 98.17% test accuracy.",
+  "Reported precision reached 98.25%.",
+  "Reported F1-score reached 98.25%.",
+  "Overall classification performance was approximately 98%."
 ]
 
 # ------------------------------------------------------------
-# METRICS FOR PORTFOLIO UI
+# PERFORMANCE METRICS
 # ------------------------------------------------------------
 
-[[projects.metrics]]
-label = "MRI Images"
-value = "6,368"
-description = "Total images used in the experiment"
-
-[[projects.metrics]]
-label = "Classes"
-value = "4"
-description = "Multi-class brain MRI categories"
-
-[[projects.metrics]]
-label = "Test Accuracy"
-value = "98.17%"
-description = "Reported Xception test accuracy"
-
-[[projects.metrics]]
-label = "Precision"
-value = "98.25%"
-description = "Reported Xception precision"
-
-[[projects.metrics]]
-label = "F1-Score"
-value = "98.25%"
-description = "Reported Xception F1-score"
-
-[[projects.metrics]]
-label = "GPU"
-value = "T4 × 2"
-description = "Kaggle GPU training environment"
+metrics = [
+  "Training Accuracy: 99.88%",
+  "Validation Accuracy: 99.08%",
+  "Test Accuracy: 98.17%",
+  "Precision: 98.25%",
+  "F1-Score: 98.25%"
+]
 
 # ------------------------------------------------------------
-# CHALLENGES & SOLUTIONS
+# CHALLENGES
 # ------------------------------------------------------------
 
-[projects.challenges]
-title = "Challenges & Solutions"
+challenges = [
+  "Different pretrained CNN architectures required different input image resolutions.",
+  "Deep CNN models can overfit when training data has limited variability.",
+  "Training multiple deep learning architectures required significant computational resources.",
+  "Different CNN architectures have different feature extraction characteristics.",
+  "Accuracy alone is insufficient for evaluating multi-class medical image classification."
+]
 
-items = [
-    {
-        challenge = "Different CNN architectures require different input resolutions.",
-        solution = "Configured preprocessing pipelines according to the input requirements of each pretrained architecture."
-    },
-    {
-        challenge = "Deep-learning models can overfit when training data lacks sufficient variability.",
-        solution = "Applied image augmentation techniques including rotation, flipping, zoom, brightness adjustment and Gaussian noise."
-    },
-    {
-        challenge = "Training multiple deep CNN architectures requires significant computational resources.",
-        solution = "Used a Kaggle GPU environment equipped with two NVIDIA T4 GPUs."
-    },
-    {
-        challenge = "Different architectures have different feature-extraction characteristics.",
-        solution = "Evaluated multiple pretrained architectures using a consistent experimental methodology."
-    },
-    {
-        challenge = "Accuracy alone does not fully describe multi-class classification performance.",
-        solution = "Evaluated additional metrics including precision, recall and F1-score."
-    }
+# ------------------------------------------------------------
+# SOLUTIONS TO CHALLENGES
+# ------------------------------------------------------------
+
+challenge_solutions = [
+  "Configured architecture-specific preprocessing pipelines for 299×299 and 224×224 input resolutions.",
+  "Applied rotation, flipping, zoom, brightness modification, and Gaussian noise augmentation.",
+  "Used a Kaggle environment with two NVIDIA T4 GPUs for accelerated model training.",
+  "Evaluated multiple pretrained architectures using a consistent experimental methodology.",
+  "Used precision, recall, and F1-score alongside accuracy for model evaluation."
 ]
 
 # ------------------------------------------------------------
 # OUTCOME
 # ------------------------------------------------------------
 
-[projects.outcome]
-title = "Outcome"
+outcome = "Successfully developed and evaluated an end-to-end deep learning pipeline for four-class brain MRI classification. The Xception model achieved a reported 98.17% test accuracy and 98.25% F1-score on the evaluated dataset, demonstrating strong classification performance within the experimental dataset."
 
-description = """
-The project resulted in an end-to-end deep-learning pipeline for four-class
-brain MRI image classification.
+# ------------------------------------------------------------
+# LEARNING
+# ------------------------------------------------------------
 
-The experiments demonstrated that pretrained CNN architectures can achieve
-high classification performance on the evaluated dataset. The Xception
-architecture achieved a reported test accuracy of 98.17% and F1-score of
-98.25%.
-
-Beyond the model results, the project provided practical experience in
-medical-image preprocessing, transfer learning, CNN experimentation,
-GPU-based model training and research-oriented performance evaluation.
-"""
-
-key_outcomes = [
-    "Developed an end-to-end MRI classification pipeline.",
-    "Implemented transfer learning using multiple pretrained CNN architectures.",
-    "Evaluated four brain MRI classification categories.",
-    "Achieved 98.17% reported test accuracy using Xception.",
-    "Achieved 98.25% reported F1-score using Xception.",
-    "Performed quantitative model evaluation.",
-    "Built a foundation for future explainable-AI and segmentation research."
+learning = [
+  "Deep learning pipeline development",
+  "Medical image preprocessing",
+  "Transfer learning",
+  "CNN architecture comparison",
+  "Data augmentation",
+  "GPU-based model training",
+  "Multi-class classification",
+  "Model performance evaluation",
+  "Research-oriented experimentation"
 ]
 
 # ------------------------------------------------------------
 # FUTURE SCOPE
 # ------------------------------------------------------------
 
-[projects.future_scope]
-title = "Future Scope"
-
-items = [
-    {
-        title = "External Dataset Validation",
-        description = "Evaluate the models on independent MRI datasets to investigate generalization across different data sources."
-    },
-    {
-        title = "Explainable AI",
-        description = "Integrate Grad-CAM, Grad-CAM++ or SHAP to visualize regions contributing to model predictions."
-    },
-    {
-        title = "Tumor Segmentation",
-        description = "Extend the system from image-level classification to pixel-level tumor localization and segmentation."
-    },
-    {
-        title = "Advanced Architectures",
-        description = "Experiment with DenseNet, EfficientNet, ConvNeXt and Vision Transformer architectures."
-    },
-    {
-        title = "Ensemble Learning",
-        description = "Combine predictions from multiple architectures to investigate improvements in robustness."
-    },
-    {
-        title = "Interactive Research Prototype",
-        description = "Develop a Streamlit-based interface for image upload, prediction, confidence visualization and explainability."
-    },
-    {
-        title = "Clinical Research Validation",
-        description = "Conduct validation using clinically curated datasets and appropriate evaluation protocols before considering real-world clinical applications."
-    }
-]
-
-# ------------------------------------------------------------
-# TECHNOLOGIES
-# ------------------------------------------------------------
-
-[projects.technologies]
-title = "Technologies & Tools"
-
-programming = [
-    "Python"
-]
-
-deep_learning = [
-    "TensorFlow",
-    "Keras",
-    "Convolutional Neural Networks",
-    "Transfer Learning"
-]
-
-models = [
-    "Xception",
-    "InceptionResNetV2",
-    "VGG16",
-    "VGG19"
-]
-
-data_science = [
-    "NumPy",
-    "Pandas",
-    "Matplotlib"
-]
-
-computer_vision = [
-    "Image Processing",
-    "Image Augmentation",
-    "MRI Image Analysis"
-]
-
-infrastructure = [
-    "Kaggle",
-    "NVIDIA T4 GPU × 2"
+future_scope = [
+  "Validate models using independent external MRI datasets.",
+  "Integrate Grad-CAM or Grad-CAM++ for explainable AI visualization.",
+  "Extend the system from classification to tumor localization and segmentation.",
+  "Experiment with DenseNet and EfficientNet architectures.",
+  "Evaluate Vision Transformer and ConvNeXt based approaches.",
+  "Develop ensemble models combining multiple CNN predictions.",
+  "Build an interactive Streamlit-based MRI analysis prototype.",
+  "Investigate model robustness across different MRI acquisition conditions.",
+  "Conduct clinically curated validation before considering real-world clinical applications."
 ]
 
 # ------------------------------------------------------------
 # PROJECT LINKS
 # ------------------------------------------------------------
 
-[projects.links]
-
 github = ""
 live_demo = ""
-research_paper = ""
-dataset = ""
+paper = ""
+dataset_link = ""
 documentation = ""
 
 # ------------------------------------------------------------
 # GALLERY
 # ------------------------------------------------------------
 
-[projects.gallery]
-title = "Project Gallery"
-
-items = [
-    {
-        type = "image",
-        title = "MRI Dataset Samples",
-        description = "Representative MRI images from the four classification categories.",
-        image = "/images/projects/mri-brain-tumor/dataset-samples.webp"
-    },
-    {
-        type = "image",
-        title = "Data Augmentation",
-        description = "Examples of transformed MRI images used during model training.",
-        image = "/images/projects/mri-brain-tumor/data-augmentation.webp"
-    },
-    {
-        type = "image",
-        title = "Model Architecture",
-        description = "Overview of the pretrained CNN classification pipeline.",
-        image = "/images/projects/mri-brain-tumor/architecture.webp"
-    },
-    {
-        type = "image",
-        title = "Training Performance",
-        description = "Training and validation accuracy across model training.",
-        image = "/images/projects/mri-brain-tumor/accuracy-curve.webp"
-    },
-    {
-        type = "image",
-        title = "Loss Analysis",
-        description = "Training and validation loss curves used to analyze model learning behavior.",
-        image = "/images/projects/mri-brain-tumor/loss-curve.webp"
-    },
-    {
-        type = "image",
-        title = "Confusion Matrix",
-        description = "Class-wise classification performance on the test dataset.",
-        image = "/images/projects/mri-brain-tumor/confusion-matrix.webp"
-    },
-    {
-        type = "image",
-        title = "Model Comparison",
-        description = "Comparison of evaluated pretrained CNN architectures.",
-        image = "/images/projects/mri-brain-tumor/model-comparison.webp"
-    },
-    {
-        type = "image",
-        title = "Prediction Results",
-        description = "Example MRI predictions generated by the trained model.",
-        image = "/images/projects/mri-brain-tumor/predictions.webp"
-    }
+gallery = [
+  "MRI dataset samples",
+  "Data preprocessing and augmentation examples",
+  "CNN architecture diagrams",
+  "Training accuracy and validation accuracy curves",
+  "Training and validation loss curves",
+  "Confusion matrix",
+  "CNN model comparison",
+  "Sample MRI predictions"
 ]
 
 # ------------------------------------------------------------
-# RESEARCH INFORMATION
-# ------------------------------------------------------------
-
-[projects.research]
-title = "Research Context"
-
-paper_title = "Simulation Studies on Deep Learning Models for Intracranial Neoplasm Imaging Applications"
-
-research_area = "Deep Learning for Medical Image Classification"
-
-focus = [
-    "Brain MRI Classification",
-    "Transfer Learning",
-    "Pretrained CNN Architectures",
-    "Medical Image Analysis",
-    "Deep Learning Model Evaluation"
-]
-
-models_studied = [
-    "Xception",
-    "InceptionResNetV2",
-    "VGG16",
-    "VGG19"
-]
-
-# ------------------------------------------------------------
-# LEARNING OUTCOMES
-# ------------------------------------------------------------
-
-[projects.learning]
-title = "What I Learned"
-
-items = [
-    "Designing end-to-end deep-learning pipelines.",
-    "Working with medical image datasets.",
-    "Implementing transfer learning with pretrained CNNs.",
-    "Understanding differences between CNN architectures.",
-    "Designing image preprocessing and augmentation pipelines.",
-    "Training models using GPU acceleration.",
-    "Evaluating multi-class classification models.",
-    "Interpreting model performance using multiple evaluation metrics.",
-    "Structuring experiments for research-oriented analysis."
-]
-
-# ------------------------------------------------------------
-# PORTFOLIO TAGS
+# TAGS
 # ------------------------------------------------------------
 
 tags = [
-    "Artificial Intelligence",
-    "Deep Learning",
-    "Computer Vision",
-    "Medical AI",
-    "Medical Imaging",
-    "CNN",
-    "Transfer Learning",
-    "TensorFlow",
-    "Keras",
-    "Python",
-    "MRI",
-    "Research"
+  "Python",
+  "TensorFlow",
+  "Keras",
+  "Deep Learning",
+  "CNN",
+  "Transfer Learning",
+  "Computer Vision",
+  "Medical Imaging",
+  "MRI",
+  "Medical AI",
+  "Xception",
+  "InceptionResNetV2",
+  "VGG16",
+  "VGG19"
 ]
 
 # ------------------------------------------------------------
-# RESUME / PORTFOLIO SUMMARY
+# RESEARCH
 # ------------------------------------------------------------
 
-resume_summary = """
-Developed a deep-learning based four-class brain MRI classification pipeline
-using pretrained Xception, InceptionResNetV2, VGG16 and VGG19 architectures.
-Using transfer learning, image augmentation and GPU-accelerated training,
-the Xception model achieved 98.17% test accuracy and 98.25% F1-score on the
-evaluated dataset of 6,368 MRI images.
-"""
+research_title = "Simulation Studies on Deep Learning Models for Intracranial Neoplasm Imaging Applications"
 
-one_line_summary = "Four-class brain MRI classification using pretrained CNNs and transfer learning, achieving 98.17% test accuracy with Xception."
+research_area = "Deep Learning for Medical Image Classification"
+
+research_focus = [
+  "Brain MRI Classification",
+  "Pretrained CNN Architectures",
+  "Transfer Learning",
+  "Medical Image Analysis",
+  "Multi-Class Classification",
+  "Deep Learning Model Evaluation"
+]
 
 # ------------------------------------------------------------
-# SEO / META
+# PORTFOLIO SUMMARY
 # ------------------------------------------------------------
 
-[projects.seo]
-title = "MRI-Based Brain Tumor Detection Using Pretrained CNN Models"
-description = "Deep-learning project for four-class brain MRI classification using Xception, InceptionResNetV2, VGG16 and VGG19 with transfer learning."
-keywords = [
-    "MRI brain tumor detection",
-    "brain tumor classification",
-    "CNN medical imaging",
-    "Xception brain tumor",
-    "deep learning medical imaging",
-    "TensorFlow MRI classification",
-    "transfer learning",
-    "medical image analysis"
-]
+portfolio_summary = "Developed a four-class brain MRI classification system using pretrained Xception, InceptionResNetV2, VGG16, and VGG19 CNN architectures. Using transfer learning, image augmentation, and GPU-accelerated training, the Xception model achieved 98.17% reported test accuracy and 98.25% F1-score across 6,368 MRI images."
 
+resume_description = "Developed a transfer-learning based brain MRI classification pipeline using Xception, InceptionResNetV2, VGG16, and VGG19, achieving 98.17% reported test accuracy and 98.25% F1-score on a 6,368-image dataset."
 
-[[projects]]
-id = "smart-glove"
-title = "Smart Glove for ASL to English Translation"
-category = "Wearable Technology / Embedded Systems / Human-Machine Interaction"
-year = 2026
-featured = true
-short_description = "A wearable smart glove designed to recognize American Sign Language gestures and translate them into English."
-description = "A wearable smart glove project designed to capture hand gestures and translate recognized American Sign Language (ASL) signs into corresponding English output."
-problem = "Communication between sign-language users and people unfamiliar with sign language can be challenging, creating a need for an accessible system that can convert hand gestures into understandable English output."
-solution = "Developed a wearable glove-based system that captures hand gestures using integrated sensing components and processes the gesture information to identify ASL signs and generate corresponding English output."
-contribution = "Worked on the wearable glove system, gesture data acquisition, signal processing, gesture recognition, and translation of recognized signs into English."
-technologies = ["Embedded Systems", "Sensor Processing", "Gesture Recognition", "Wearable Technology", "Human-Machine Interaction"]
-hardware = ["Wearable Glove", "Gesture Sensors", "Microcontroller"]
-software = ["Gesture Recognition System", "Signal Processing Pipeline", "English Translation Output"]
-features = [
-  "Wearable hand-gesture sensing",
-  "Recognition of American Sign Language gestures",
-  "Conversion of recognized gestures into English",
-  "Real-time gesture-based human-machine interaction"
-]
-achievements = [
-  "Developed a wearable interface for converting hand gestures into English-language output."
-]
-results = [
-  "Add measured result"
-]
-
-[[projects.metrics]]
-label = "Interface"
-value = "Wearable"
-description = "Glove-based gesture interaction"
-
-[[projects.metrics]]
-label = "Translation"
-value = "ASL → English"
-description = "Gesture-to-language translation"
-
-images = [
-  "/projects/glove-01.webp"
-]
-videos = []
-github = ""
-demo = ""
-documentation = ""
-patent = ""
-
+one_line_result = "98.17% Test Accuracy | 98.25% F1-Score | 6,368 MRI Images | 4 Classes"
 
 [[projects]]
 id = "factory-inspection-robot"
